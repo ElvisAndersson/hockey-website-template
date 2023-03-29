@@ -7,7 +7,7 @@ const players = [
     age: 21,
     tags: ["Newbie"],
     goals: 12,
-    matchesPlayed: 4
+    matchesPlayed: 4,
   },
 ];
 

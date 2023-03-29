@@ -1,8 +1,6 @@
-import Link from 'next/link';
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-
-
+import Link from "next/link";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -18,39 +16,57 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-        <code>This week in Sweden.</code>
-        <code>The Hockey Project by Elvis Andersson.</code>
+          <code>This week in Sweden.</code>
+          <code>The Hockey Project by Elvis Andersson.</code>
         </p>
 
         <div className={styles.grid}>
-        <Link legacyBehavior href="/Player1"><a className={styles.card}>
-            <h3>Player Placeholder 1 &rarr;</h3>
-            <img src="https://a.espncdn.com/i/headshots/nhl/players/full/5033247.png" alt="Player 1" width="350" height="auto" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit.</p>
-          </a>
-        </Link>
+          <Link legacyBehavior href="/Player1">
+            <a className={styles.card}>
+              <h3>Player Placeholder 1 &rarr;</h3>
+              <img
+                src="https://a.espncdn.com/i/headshots/nhl/players/full/5033247.png"
+                alt="Player 1"
+                width="350"
+                height="auto"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                blandit.
+              </p>
+            </a>
+          </Link>
           <Link href="/Player2" className={styles.card}>
             <h3>Player Placeholder 2 &rarr;</h3>
-            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/5077308.png" alt="Player 1" width="350" height="auto" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit.</p>
+            <img
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/5077308.png"
+              alt="Player 1"
+              width="350"
+              height="auto"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              blandit.
+            </p>
           </Link>
 
-          <a
-            href="/Player3"
-            className={styles.card}
-          >
+          <a href="/Player3" className={styles.card}>
             <h3>Player Placeholder 3 &rarr;</h3>
-            <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/4588638.png&w=350&h=254" alt="Player 1" width="350" height="auto" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit.</p>
+            <img
+              src="https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/4588638.png&w=350&h=254"
+              alt="Player 1"
+              width="350"
+              height="auto"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              blandit.
+            </p>
           </a>
-
-          
         </div>
       </main>
 
-      <footer>
- 
-      </footer>
+      <footer></footer>
 
       <style jsx>{`
         main {
@@ -103,5 +119,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
