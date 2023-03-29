@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "age": 30,
+    "tags": ["Platinum", "Admin", "Veteran"],
+    "goals": 100,
+    "matchesPlayed": 31,
+    "img": "https://render.fineartamerica.com/images/rendered/default/print/8/6/break/images-medium-5/2014-bridgestone-nhl-winter-classic-gregory-shamus.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Adam Jones",
+    "age": 21,
+    "tags": ["Newbie"],
+    "goals": 12,
+    "matchesPlayed": 4,
+    "img": "http://via.placeholder.com/640x360"
+  },
+  {
+    "id": "3",
+    "name": "Martin Herald",
+    "age": 23,
+    "tags": ["Top Scorer"],
+    "goals": 120,
+    "matchesPlayed": 15,
+    "img": "http://via.placeholder.com/800x600"
+  }
+]

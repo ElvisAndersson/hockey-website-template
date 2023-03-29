@@ -1,3 +1,4 @@
+import { Button, Card } from "antd";
 import React from "react";
 
 export default function PlayerProfile({ player }) {
@@ -7,7 +8,7 @@ export default function PlayerProfile({ player }) {
     // call the subscribe API
   };
   return (
-    <div>
+    <Card>
       <h3>
         {player.name} ({player.age})
       </h3>
@@ -20,9 +21,9 @@ export default function PlayerProfile({ player }) {
         <span>Matches Played: {player.matchesPlayed}</span>
         <span>Avg Goals: {averageGoals.toFixed(2)}</span>
       </div>
-      <button type="button" onClick={handleClick}>
+      <Button onClick={handleClick} type="primary">
         See More
-      </button>
-    </div>
+      </Button>
+    </Card>
   );
 }

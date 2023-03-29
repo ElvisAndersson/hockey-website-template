@@ -2,6 +2,9 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+/*
+  Task 2: on the home show only 3 players, add a link to see all players on the /players page
+*/
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -21,7 +24,9 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <Link legacyBehavior href="/Player1">
+          {/* Task 1: refactor this to map over the players array and display the correct card */}
+          {/* add any missing info to the players.json file */}
+          <Link legacyBehavior href="/players/1">
             <a className={styles.card}>
               <h3>Player Placeholder 1 &rarr;</h3>
               <img
@@ -36,7 +41,7 @@ export default function Home() {
               </p>
             </a>
           </Link>
-          <Link href="/Player2" className={styles.card}>
+          <Link href="/players/2" className={styles.card}>
             <h3>Player Placeholder 2 &rarr;</h3>
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/5077308.png"
@@ -50,7 +55,7 @@ export default function Home() {
             </p>
           </Link>
 
-          <a href="/Player3" className={styles.card}>
+          <a href="/players/3" className={styles.card}>
             <h3>Player Placeholder 3 &rarr;</h3>
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/4588638.png&w=350&h=254"
