@@ -1,5 +1,5 @@
 import players from '../../src/players.json';
-import PlayerProfile from '../../pages/PlayerProfile';
+import PlayerProfile from '../../src/components/PlayerProfile';
 
 export default function PlayerProfilePage({ player }) {
   return (
@@ -19,8 +19,8 @@ export async function getStaticPaths() {
 
 
 export async function getStaticProps({ params }) {
-  const player = players.find((p) => p.id === parseInt(params.id));
-
+  const player = players.find((p) => p.id === params.id);
+  
   if (!player) {
     return { notFound: true };
   }

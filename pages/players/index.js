@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
-import playersData from "../src/players.json";
+import styles from "../../styles/Home.module.css";
+import playersData from "../../src/players.json";
 
 export default function PlayerIndex() {
   return (

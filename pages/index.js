@@ -73,7 +73,7 @@ export default function Home() {
               blandit.
             </p>
           </a>
-          <Link href="/playerindex" className={styles.card}>
+          <Link href="/players" className={styles.card}>
             <h3>Click here for all the players &rarr;</h3>
             <img
               src="https://cms.nhl.bamgrid.com/images/photos/300558248/1024x576/cut.jpg"
