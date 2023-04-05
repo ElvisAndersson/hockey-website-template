@@ -6,7 +6,8 @@
     "tags": ["Platinum", "Admin", "Veteran"],
     "goals": 100,
     "matchesPlayed": 31,
-    "img": "https://render.fineartamerica.com/images/rendered/default/print/8/6/break/images-medium-5/2014-bridgestone-nhl-winter-classic-gregory-shamus.jpg"
+    "img": "https://render.fineartamerica.com/images/rendered/default/print/8/6/break/images-medium-5/2014-bridgestone-nhl-winter-classic-gregory-shamus.jpg",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   },
   {
     "id": "2",
@@ -15,7 +16,8 @@
     "tags": ["Newbie"],
     "goals": 12,
     "matchesPlayed": 4,
-    "img": "http://via.placeholder.com/640x360"
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/39/Pittsburgh_Penguins%2C_Washington_Capitals%2C_Bryan_Rust_%2833744033514%29.jpg",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   },
   {
     "id": "3",
@@ -24,6 +26,67 @@
     "tags": ["Top Scorer"],
     "goals": 120,
     "matchesPlayed": 15,
-    "img": "http://via.placeholder.com/800x600"
+    "img": "https://rakapuckar.com/wp-content/uploads/917A5682-350x250.jpg",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    "id": "4",
+    "name": "Ethan Bear",
+    "age": 25,
+    "tags": ["Defenceman"],
+    "goals": 4,
+    "matchesPlayed": 12,
+    "img": "https://az729104.cdn.laget.se/10422739.jpeg;width=350;height=250;format=jpeg;mode=crop;scale=both;anchor=topcenter;v=1",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    "id": "5",
+    "name": "Filip Hronek",
+    "age": 25,
+    "tags": ["Prospect"],
+    "goals": 105,
+    "matchesPlayed": 4,
+    "img": "https://az729104.cdn.laget.se/10437335.jpg;width=350;height=250;format=jpeg;mode=crop;scale=both;anchor=topcenter;v=1",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    "id": "6",
+    "name": "Tyler Myers",
+    "age": 32,
+    "tags": ["Veteran"],
+    "goals": 60,
+    "matchesPlayed": 80,
+    "img": "https://rakapuckar.com/wp-content/uploads/elmer-350x250.jpeg",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    "id": "7",
+    "name": "Logan Hutsko",
+    "age": 28,
+    "tags": ["Bananaman"],
+    "goals": 40,
+    "matchesPlayed": 80,
+    "img": "https://az729104.cdn.laget.se/10286425.jpeg;width=350;height=250;format=jpeg;mode=crop;scale=both;anchor=topcenter;v=1",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    "id": "8",
+    "name": "Matt Bradley",
+    "age": 45,
+    "tags": ["Veteran"],
+    "goals": 54,
+    "matchesPlayed": 85,
+    "img": "https://az729104.cdn.laget.se/10424298.jpg;width=350;height=250;format=jpeg;mode=crop;scale=both;anchor=topcenter;v=1",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    "id": "9",
+    "name": "Mickey Dunn",
+    "age": 22,
+    "tags": ["Top Scorer"],
+    "goals": 200,
+    "matchesPlayed": 68,
+    "img": "https://az729104.cdn.laget.se/6531607.jpg;width=350;height=250;format=jpeg;mode=crop;scale=both;anchor=topcenter;v=1",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   }
 ]

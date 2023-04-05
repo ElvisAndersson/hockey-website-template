@@ -1,31 +1,29 @@
-import { useRouter } from "next/router";
+import players from '../../src/players.json';
+import PlayerProfile from '../../pages/PlayerProfile';
 
-import styles from "../../styles/Home.module.css";
-import players from "../../src/players.json";
-import PlayerProfile from "../PlayerProfile";
-
-const getPlayer = (id) => players.find((player) => id === player.id);
-
-/* Task 4: add a go back button */
-const Player = () => {
-  const router = useRouter();
-  const { id } = router.query;
-  const player = getPlayer(id);
-
-  return player ? (
-    // Task 5: move this code inside the player profile
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <img src={player.img} alt="Player 1" width="650" height="auto" />
-        <p>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          blandit.
-        </p>
-        <PlayerProfile player={player} />
-      </div>
+export default function PlayerProfilePage({ player }) {
+  return (
+    <div>
+      <h1>{player.name} Profile</h1>
+      <PlayerProfile player={player} />
     </div>
-  ) : null;
-};
+  );
+}
 
-export default Player;
+export async function getStaticPaths() {
+  const paths = players.map((player) => ({
+    params: { id: player.id.toString() },
+  }));
+  return { paths, fallback: false };
+}
+
+
+export async function getStaticProps({ params }) {
+  const player = players.find((p) => p.id === parseInt(params.id));
+
+  if (!player) {
+    return { notFound: true };
+  }
+
+  return { props: { player } };
+}

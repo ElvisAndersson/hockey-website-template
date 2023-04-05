@@ -2,8 +2,12 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+
+
 /*
   Task 2: on the home show only 3 players, add a link to see all players on the /players page
+  Add more players to the json - Done
+  Make a "players page" with all the players - players page already exist
 */
 export default function Home() {
   return (
@@ -24,8 +28,9 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          {/* Task 1: refactor this to map over the players array and display the correct card */}
-          {/* add any missing info to the players.json file */}
+          {/* Task 1: refactor this to map over the players array and display the correct card - NOT Done */}
+          {/* add any missing info to the players.json file - Done */}
+          {/* need to be softcoded, not hardcoded like now, take from json */}
           <Link legacyBehavior href="/players/1">
             <a className={styles.card}>
               <h3>Player Placeholder 1 &rarr;</h3>
@@ -68,7 +73,21 @@ export default function Home() {
               blandit.
             </p>
           </a>
+          <Link href="/playerindex" className={styles.card}>
+            <h3>Click here for all the players &rarr;</h3>
+            <img
+              src="https://cms.nhl.bamgrid.com/images/photos/300558248/1024x576/cut.jpg"
+              alt="Player 1"
+              width="350"
+              height="auto"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              blandit.
+            </p>
+            </Link>
         </div>
+        
       </main>
 
       <footer></footer>
